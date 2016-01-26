@@ -40,7 +40,7 @@ test('with once callback should callback with any arguments just once', function
         callbackOnce.apply(null, args);
     }
     
-    assert.equal(called, 1);
+    assert.equal(called, 10);
     assert.end();
 });
 

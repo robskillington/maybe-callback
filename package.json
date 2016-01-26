@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/robskillington/maybe-callback",
   "devDependencies": {
-    "cached-tape": "^2.0.0"
+    "cached-tape": "^2.0.0",
+    "istanbul": "~0.4.2"
   }
 }
