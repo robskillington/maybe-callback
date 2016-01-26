@@ -16,6 +16,14 @@ test('with callback should callback with any arguments', function t(assert) {
     maybeCallback(callback).apply(null, args);
 });
 
+test('with callback should return any returned value', function t(assert) {
+    var callback = maybeCallback( function() {
+      return 'yes';
+    });
+    assert.equal(callback(), 'yes');
+    assert.end();
+});
+
 test('without callback should not throw', function t(assert) {
     assert.doesNotThrow(function() {
         maybeCallback(undefined)(null, 1, 2);
@@ -41,6 +49,14 @@ test('with once callback should callback with any arguments just once', function
     }
     
     assert.equal(called, 10);
+    assert.end();
+});
+
+test('with once callback should return any returned value', function t(assert) {
+    var callback = maybeCallback.once( function() {
+      return 'yes';
+    });
+    assert.equal(callback(), 'yes');
     assert.end();
 });
 
