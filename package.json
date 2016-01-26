@@ -1,7 +1,7 @@
 {
   "name": "maybe-callback",
-  "version": "1.0.0",
-  "description": "Maybe call a callback if its a function",
+  "version": "2.0.0",
+  "description": "Maybe call a callback if it's a function",
   "main": "index.js",
   "scripts": {
     "test": "npm run cover",
@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/robskillington/maybe-callback",
   "devDependencies": {
-    "cached-tape": "^2.0.0"
+    "cached-tape": "^2.0.0",
+    "istanbul": "~0.4.2"
   }
 }
