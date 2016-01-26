@@ -1,7 +1,7 @@
 {
   "name": "maybe-callback",
   "version": "1.0.0",
-  "description": "Maybe call a callback if its a function",
+  "description": "Maybe call a callback if it's a function",
   "main": "index.js",
   "scripts": {
     "test": "npm run cover",
